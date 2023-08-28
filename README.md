@@ -42,7 +42,7 @@
                <br>
 <h3 align="center">Proximamente</h3>
 <div align="center">                                       
-<a href="https://github.com/Yextep" target="_blank"><img src="https://imgur.com/H61LJWS" width="400" alt="Curso arquitectura MVVM"></a>
+<a href="https://github.com/Yextep" target="_blank"><img src="https://imgur.com/H61LJWS" width="400" alt="Proximamente"></a>
 <br>
 <p>
 <a href="https://github.com/Yextep" target="_blank">
