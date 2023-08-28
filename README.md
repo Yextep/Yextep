@@ -42,7 +42,7 @@
                <br>
 <h3 align="center">Proximamente</h3>
 <div align="center">                                       
-<a href="https://github.com/Yextep" target="_blank"><img src="https://github.com/ArisGuimera/ArisGuimera/assets/114537444/7fbbe3b3-22ab-4231-89e6-2aebe525eea3" width="400" alt="Proximamente"></a>
+<a href="https://github.com/Yextep" target="_blank"><img src="https://github.com/ArisGuimera/ArisGuimera/assets/114537444/7fbbe3b3-22ab-4231-89e6-2aebe525eea3" width="400" </img> alt="Proximamente"></a>
 <br>
 <p>
 <a href="https://github.com/Yextep" target="_blank">
