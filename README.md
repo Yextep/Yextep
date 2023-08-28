@@ -3,19 +3,19 @@
 </div>
 <img src="https://imgur.com/lDVi1qW">
 
-[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCIjEgHA1vatSR2K4rfcdNRg?style=social)](https://youtube.com/yextep?sub_confirmation=1)
-[![Twitch Status](https://img.shields.io/twitch/status/yextep?style=social)](https://www.twitch.tv/yextep)
-[![GitHub followers](https://img.shields.io/github/followers/yextep?style=social)](https://github.com/yextep)
-![Discord Shield](https://discordapp.com/api/guilds/807719549075980308/widget.png?style=shield)
+[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCA5vJnB70Fs0jecYUzK8mRg)](https://youtube.com/yextep?sub_confirmation=1)
+[![Twitch Status](https://img.shields.io/twitch/status/yextep)](https://www.twitch.tv/yextep)
+[![GitHub followers](https://img.shields.io/github/followers/yextep)](https://github.com/yextep)
+//![Youtube Channel Views](https://img.shields.io/youtube/channel/views/UCA5vJnB70Fs0jecYUzK8mRg)
 
 ## Sobre mi
 
 - ⭐ Github Star ⭐ 
-- 📲 Mobile developer
-- 🎥 Te enseño a programar apps en [Youtube](https://youtube.com/aristidevs?sub_confirmation=1) (+29k subs)
-- ✏️ Y por escrito en [CursoKotlin](https://cursokotlin.com)
-- 📗 Autor del libro [Iniciación a Android en Kotlin. Casos prácticos](https://www.paraninfo.es/catalogo/9788428340922/iniciacion-a-android-en-kotlin--casos-practicos)
-- 🧑‍🏫 Creador de [AppCademy](https://appcademy.dev)
+- 📲 Computer Security Student
+- 🎥 Te muestro todo sobre ciberseguridad
+- ✏️ Estudiante universitario de la [UDI](https://web.udi.edu.co/)
+- 📗 Estudiante de Seguridad Informatica
+- 🧑‍🏫 Proximamente
 <br>
 
 ## Proyectos *bombitas*
