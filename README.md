@@ -6,7 +6,7 @@
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCA5vJnB70Fs0jecYUzK8mRg)](https://youtube.com/yextep?sub_confirmation=1)
 [![Twitch Status](https://img.shields.io/twitch/status/yextep)](https://www.twitch.tv/yextep)
 [![GitHub followers](https://img.shields.io/github/followers/yextep)](https://github.com/yextep)
-//![Youtube Channel Views](https://img.shields.io/youtube/channel/views/UCA5vJnB70Fs0jecYUzK8mRg)
+[![Youtube Channel Views](https://img.shields.io/youtube/channel/views/UCA5vJnB70Fs0jecYUzK8mRg)
 
 ## Sobre mi
 
