@@ -1,9 +1,7 @@
 <div align="center">
 <h1 align="center">Hola, soy <a href="https://aristi.dev">Yextep</a> 👋</h1>
 </div>
-![crow banner](https://github.com/Yextep/Yextep/assets/114537444/4a2effed-0f95-47c6-b0de-efa164e23fb0)
-
-<img src="https://imgur.com/lDVi1qW">
+<img src="https://github.com/Yextep/Yextep/assets/114537444/4a2effed-0f95-47c6-b0de-efa164e23fb0">
 [![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCA5vJnB70Fs0jecYUzK8mRg)](https://youtube.com/yextep?sub_confirmation=1)
 ![Youtube Channel Views](https://img.shields.io/youtube/channel/views/UCA5vJnB70Fs0jecYUzK8mRg)
 [![Twitch Status](https://img.shields.io/twitch/status/yextep)](https://www.twitch.tv/yextep)
