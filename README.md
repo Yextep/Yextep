@@ -24,9 +24,9 @@
 <td width="50%">
 <h3 align="center">Attiny85 Ducky</h3>
 <div align="center">
-<a href=""https://github.com/Yextep/Attiny85-Ducky" target="_blank"><img src="https://github.com/ArisGuimera/ArisGuimera/assets/114537444/f93eb411-918e-4fc4-9bda-0c3c98a2818d" width="400" alt="Attiny85 Ducky"></a>
+<a href="https://github.com/Yextep/Attiny85-Ducky" target="_blank"><img src="https://github.com/ArisGuimera/ArisGuimera/assets/114537444/f93eb411-918e-4fc4-9bda-0c3c98a2818d" width="400" alt="Attiny85 Ducky"></a>
 <p>
-<a href="https://github.com/Yextep" target="_blank">
+<a href="https://github.com/Yextep/Attiny85-Ducky" target="_blank">
 <img src="https://img.shields.io/badge/CÓDIGO-ff9?style=for-the-badge&logo=github&logoColor=black">
 </a>
 <a href="https://www.youtube.com/Yextep" target="_blank">
