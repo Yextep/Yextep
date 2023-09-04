@@ -40,19 +40,19 @@
 
 <td width="50%">
                <br>
-<h3 align="center">Proximamente</h3>
+<h3 align="center">Facebook Guardn</h3>
 <div align="center">                                       
-<a href="https://github.com/Yextep" target="_blank"><img src="https://github.com/ArisGuimera/ArisGuimera/assets/114537444/fcecb19a-9c4e-429a-8626-332df97ed286" width="400" alt="Proximamente"></a>
+<a href="https://github.com/Yextep" target="_blank"><img src="file:///home/kalat/Downloads/Github/paginas/imagenes/profile_guardn.png" width="400" alt="Proximamente"></a>
 <br>
 <p>
-<a href="https://github.com/Yextep" target="_blank">
+<a href="https://github.com/Yextep/guardn" target="_blank">
 <img src="https://img.shields.io/badge/C%C3%93DIGO-80ffaa?style=for-the-badge&logo=github&logoColor=black">
 </a>
 <a href="https://www.youtube.com/Yextep" target="_blank">
 <img src="https://img.shields.io/badge/-Youtube-green?style=for-the-badge&color=3fFD7f">
 </a>
 </p>
-</p>Las arquitecturas son <strong>IMPRESCINDIBLES</strong> para poder trabajar como desarrollador/a. En este curso, divido por ramas irás aprendiendo a implementar una arquitectura real y robusta con inyección de dependencias, clean architecture, testing y mucho más.</p>
+</p>¿Qué sucede cuando activas la protección de Facebook? Otras personas no podrán tomar screenshots de tu foto de perfil, compartir, enviar mensajes o descargar desde su foto de perfil actual en Facebook. Sólo te permitirá a ti y a tus amigos de Facebook etiquetar tu foto de perfil actual.</p>
 </div>                                                             
 </table>                                                                                 
 </div>
