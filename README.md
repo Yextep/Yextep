@@ -42,7 +42,7 @@
                <br>
 <h3 align="center">Facebook Guardn</h3>
 <div align="center">                                       
-<a href="https://github.com/Yextep" target="_blank"><img src="file:///home/kalat/Downloads/Github/paginas/imagenes/profile_guardn.png" width="400" alt="Proximamente"></a>
+<a href="https://github.com/Yextep" target="_blank"><img src="https://github.com/ArisGuimera/ArisGuimera/assets/114537444/fcecb19a-9c4e-429a-8626-332df97ed286" width="400" alt="Proximamente"></a>
 <br>
 <p>
 <a href="https://github.com/Yextep/guardn" target="_blank">
