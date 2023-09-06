@@ -18,7 +18,7 @@
 - 🧑‍🏫 Proximamente
 <br>
 
-## Proyectos *bombitas*
+## Proyectos *Hacking*
 <table>
 <tr>
 <td width="50%">
