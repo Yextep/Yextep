@@ -3,10 +3,9 @@
 </div>
 <img src="https://github.com/Yextep/Yextep/assets/114537444/4a2effed-0f95-47c6-b0de-efa164e23fb0"> </img>
 
-[![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCA5vJnB70Fs0jecYUzK8mRg)](https://youtube.com/yextep?sub_confirmation=1)
-![Youtube Channel Views](https://img.shields.io/youtube/channel/views/UCA5vJnB70Fs0jecYUzK8mRg)
-[![Twitch Status](https://img.shields.io/twitch/status/yextep)](https://www.twitch.tv/yextep)
+[![GitHub starts](https://img.shields.io/github/stars/Yextep)](https://github.com/yextep) 
 [![GitHub followers](https://img.shields.io/github/followers/yextep)](https://github.com/yextep)
+
 
 ## Sobre mi
 
