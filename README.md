@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center">Hola, soy <a href="https://aristi.dev">Yextep</a> 👋</h1>
+<h1 align="center">Hola, soy <a href="https://github.com/Yextep">Yextep</a> 👋</h1>
 </div>
 <img src="https://github.com/Yextep/Yextep/assets/114537444/4a2effed-0f95-47c6-b0de-efa164e23fb0"> </img>
 
