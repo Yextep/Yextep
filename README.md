@@ -11,8 +11,7 @@
 
 - ⭐ Github Star ⭐ 
 - 📲 Computer Security Student
-- 🎥 Te muestro todo sobre ciberseguridad
-- ✏️ Estudiante universitario de la [UDI](https://web.udi.edu.co/)
+- 🎥 Te muestro todo sobre pentesting
 - 📗 Estudiante de Seguridad Informatica
 - 🧑‍🏫 Proximamente
 <br>
