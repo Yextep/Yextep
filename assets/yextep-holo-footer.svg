@@ -1,1 +1,42 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="180" viewBox="0 0 1200 180" role="img" aria-labelledby="title desc">
+  <title id="title">Animated holographic footer</title>
+  <desc id="desc">A futuristic animated footer with holographic waves and a final signal line.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#03130F"/>
+      <stop offset="45%" stop-color="#07152F"/>
+      <stop offset="100%" stop-color="#120A2F"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FF88"/>
+      <stop offset="45%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .wave-a { animation: moveA 8s ease-in-out infinite; }
+      .wave-b { animation: moveB 10s ease-in-out infinite; }
+      .dash { stroke-dasharray: 8 12; animation: dash 9s linear infinite; }
+      .text { font: 800 16px 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; letter-spacing: 3px; fill:#FFFFFF; }
+      .small { font: 600 11px 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; fill:#9DEFFF; }
+      @keyframes moveA { 0%,100% { transform: translateX(0); } 50% { transform: translateX(-48px); } }
+      @keyframes moveB { 0%,100% { transform: translateX(-36px); } 50% { transform: translateX(36px); } }
+      @keyframes dash { to { stroke-dashoffset: -240; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+  <rect width="1200" height="180" rx="24" fill="url(#bg)"/>
+  <path class="wave-a" d="M-80 122 C90 58 180 164 350 100 S620 44 780 108 S1010 166 1280 78" fill="none" stroke="url(#wave)" stroke-width="5" stroke-opacity=".8" filter="url(#glow)"/>
+  <path class="wave-b" d="M-100 138 C88 92 220 178 390 126 S646 76 824 132 S1040 170 1300 108" fill="none" stroke="#00E5FF" stroke-width="2" stroke-opacity=".55"/>
+  <path class="dash" d="M64 72 H1136" stroke="#FFFFFF" stroke-opacity=".18" stroke-width="2"/>
+  <text x="600" y="62" text-anchor="middle" class="text">FIN DE TRANSMISION // LA SENAL SIGUE ABIERTA</text>
+  <text x="600" y="98" text-anchor="middle" class="small">github.com/Yextep  |  youtube.com/Yextep  |  solo laboratorios controlados</text>
+  <circle cx="126" cy="72" r="6" fill="#00FF88" filter="url(#glow)"/>
+  <circle cx="1074" cy="72" r="6" fill="#00E5FF" filter="url(#glow)"/>
+</svg>

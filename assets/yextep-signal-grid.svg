@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Animated signal grid and skill radar</title>
+  <desc id="desc">A futuristic dashboard with a radar sweep, terminal panel, moving signal bars and capability readouts.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="55%" stop-color="#07152F"/>
+      <stop offset="100%" stop-color="#060A1F"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#00FF88" stop-opacity="0.65"/>
+    </linearGradient>
+    <pattern id="microGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#00E5FF" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .label { font: 700 15px 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; fill:#EAFBFF; }
+      .small { font: 600 12px 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; fill:#8BEFFF; }
+      .tiny { font: 600 10px 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; fill:#B7FFF1; opacity:.78; }
+      .dash { stroke-dasharray: 5 10; animation: dash 7s linear infinite; }
+      .wave { stroke-dasharray: 12 10; animation: wave 5s linear infinite; }
+      .blink { animation: blink 1.6s steps(2,end) infinite; }
+      .pulse { animation: pulse 2.6s ease-in-out infinite; transform-origin:center; }
+      @keyframes dash { to { stroke-dashoffset:-180; } }
+      @keyframes wave { to { stroke-dashoffset:-220; } }
+      @keyframes blink { 0%,55% { opacity:1; } 56%,100% { opacity:.15; } }
+      @keyframes pulse { 0%,100% { opacity:.45; } 50% { opacity:1; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#panel)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#microGrid)"/>
+  <rect x="26" y="26" width="1148" height="308" rx="18" fill="#020617" fill-opacity=".46" stroke="#FFFFFF" stroke-opacity=".08"/>
+
+  <g transform="translate(236 180)">
+    <circle r="128" fill="#00E5FF" opacity=".035"/>
+    <circle r="128" fill="none" stroke="#00E5FF" stroke-opacity=".34"/>
+    <circle r="96" fill="none" stroke="#00FF88" stroke-opacity=".22"/>
+    <circle r="64" fill="none" stroke="#7C3AED" stroke-opacity=".24"/>
+    <circle r="32" fill="none" stroke="#FFFFFF" stroke-opacity=".13"/>
+    <path d="M0 0 L128 -14 A128 128 0 0 1 106 72 Z" fill="url(#beam)" opacity=".72">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4.8s" repeatCount="indefinite"/>
+    </path>
+    <line x1="-128" y1="0" x2="128" y2="0" stroke="#00E5FF" stroke-opacity=".22"/>
+    <line x1="0" y1="-128" x2="0" y2="128" stroke="#00E5FF" stroke-opacity=".22"/>
+    <path class="dash" d="M-90 -80 C-40 -124 16 -90 48 -48 S106 -12 94 42 S34 106 -34 86 S-126 22 -90 -80Z" fill="none" stroke="#00FF88" stroke-width="2" stroke-opacity=".75"/>
+    <circle cx="72" cy="-48" r="6" fill="#00FF88" filter="url(#glow)" class="pulse"/>
+    <circle cx="-58" cy="62" r="5" fill="#00E5FF" filter="url(#glow)" class="pulse"/>
+    <circle cx="30" cy="88" r="4" fill="#FFB000" filter="url(#glow)" class="blink"/>
+    <text x="0" y="154" text-anchor="middle" class="small">RADAR://CAPTURA_DE_SENAL</text>
+  </g>
+
+  <g transform="translate(430 60)">
+    <text x="0" y="0" class="label">MATRIZ OPERATIVA EN VIVO</text>
+    <text x="0" y="30" class="tiny">paquetes de recon, evidencia de lab y salida de contenido</text>
+    <path class="wave" d="M0 66 C42 18 83 112 126 66 S210 18 252 66 S336 112 378 66 S462 18 504 66" fill="none" stroke="#00E5FF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M0 108H504" stroke="#FFFFFF" stroke-opacity=".08"/>
+    <g transform="translate(0 134)">
+      <text x="0" y="0" class="small">PENTESTING</text>
+      <rect x="150" y="-12" width="320" height="13" rx="7" fill="#111827"/>
+      <rect x="150" y="-12" height="13" rx="7" fill="#00E5FF">
+        <animate attributeName="width" values="210;292;238;310;210" dur="6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g transform="translate(0 172)">
+      <text x="0" y="0" class="small">OSINT</text>
+      <rect x="150" y="-12" width="320" height="13" rx="7" fill="#111827"/>
+      <rect x="150" y="-12" height="13" rx="7" fill="#00FF88">
+        <animate attributeName="width" values="188;268;224;286;188" dur="5.4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g transform="translate(0 210)">
+      <text x="0" y="0" class="small">HARDWARE</text>
+      <rect x="150" y="-12" width="320" height="13" rx="7" fill="#111827"/>
+      <rect x="150" y="-12" height="13" rx="7" fill="#7C3AED">
+        <animate attributeName="width" values="150;244;198;260;150" dur="5.9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g transform="translate(0 248)">
+      <text x="0" y="0" class="small">CONTENT</text>
+      <rect x="150" y="-12" width="320" height="13" rx="7" fill="#111827"/>
+      <rect x="150" y="-12" height="13" rx="7" fill="#FFB000">
+        <animate attributeName="width" values="176;302;246;318;176" dur="6.7s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <g transform="translate(972 66)">
+    <rect x="-20" y="-28" width="174" height="244" rx="16" fill="#020617" fill-opacity=".78" stroke="#00E5FF" stroke-opacity=".28"/>
+    <text x="0" y="0" class="small">TERMINAL</text>
+    <text x="0" y="34" class="tiny">&gt; boot senal</text>
+    <text x="0" y="58" class="tiny">&gt; scope lab</text>
+    <text x="0" y="82" class="tiny">&gt; collect proof</text>
+    <text x="0" y="106" class="tiny">&gt; write report</text>
+    <text x="0" y="130" class="tiny">&gt; publish guide</text>
+    <text x="0" y="168" class="small" fill="#00FF88">ONLINE <tspan class="blink">_</tspan></text>
+  </g>
+</svg>
