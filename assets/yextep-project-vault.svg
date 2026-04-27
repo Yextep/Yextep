@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="430" viewBox="0 0 1400 430" role="img" aria-labelledby="title desc">
+  <title id="title">Yextep animated project vault</title>
+  <desc id="desc">Animated holographic project cards for Attiny85 Ducky and Guardn.</desc>
+  <defs>
+    <linearGradient id="vaultBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020409"/>
+      <stop offset="54%" stop-color="#07152F"/>
+      <stop offset="100%" stop-color="#09111A"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#00FF88"/>
+    </linearGradient>
+    <filter id="vaultGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="vaultGrid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#00E5FF" stroke-opacity=".09"/>
+    </pattern>
+    <style>
+      .title { font: 900 38px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#FFFFFF; letter-spacing:3px; }
+      .label { font: 800 18px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#00E5FF; }
+      .text { font: 600 13px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#D7FFFA; }
+      .tiny { font: 600 11px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#9AF7FF; opacity:.78; }
+      .dash { stroke-dasharray: 10 12; animation: dash 8s linear infinite; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin:center; }
+      @keyframes dash { to { stroke-dashoffset:-240; } }
+      @keyframes pulse { 0%,100% { opacity:.4; transform:scale(.98); } 50% { opacity:1; transform:scale(1.03); } }
+      @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
+    </style>
+  </defs>
+  <rect width="1400" height="430" rx="28" fill="url(#vaultBg)"/>
+  <rect width="1400" height="430" rx="28" fill="url(#vaultGrid)"/>
+  <text x="700" y="64" text-anchor="middle" class="title">PROJECT VAULT</text>
+  <text x="700" y="96" text-anchor="middle" class="tiny">selected builds // educational security labs // public signal</text>
+
+  <g transform="translate(86 126)">
+    <rect width="574" height="232" rx="22" fill="#020617" fill-opacity=".78" stroke="#00E5FF" stroke-opacity=".46"/>
+    <path class="dash" d="M24 34H550M24 198H550" stroke="#00E5FF" stroke-width="2" stroke-opacity=".62"/>
+    <circle cx="78" cy="116" r="46" fill="#00E5FF" opacity=".12" class="pulse"/>
+    <path d="M54 114 L78 86 L104 114 L78 144 Z" fill="none" stroke="#00FF88" stroke-width="4" filter="url(#vaultGlow)"/>
+    <path d="M156 86H322M156 122H496M156 154H442" stroke="#FFFFFF" stroke-opacity=".14" stroke-width="12" stroke-linecap="round"/>
+    <text x="156" y="86" class="label">ATTINY85 DUCKY</text>
+    <text x="156" y="122" class="text">HID automation lab, payload learning, microcontroller practice.</text>
+    <text x="156" y="154" class="tiny">mode: controlled hardware // output: scripts + demos</text>
+    <rect x="156" y="178" width="210" height="12" rx="6" fill="#111827"/>
+    <rect x="156" y="178" height="12" rx="6" fill="#00FF88">
+      <animate attributeName="width" values="80;186;132;210;80" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g transform="translate(740 126)">
+    <rect width="574" height="232" rx="22" fill="#020617" fill-opacity=".78" stroke="#7C3AED" stroke-opacity=".50"/>
+    <path class="dash" d="M24 34H550M24 198H550" stroke="#7C3AED" stroke-width="2" stroke-opacity=".70"/>
+    <circle cx="78" cy="116" r="46" fill="#7C3AED" opacity=".14" class="pulse"/>
+    <path d="M52 122 C60 84 98 84 106 122 C98 150 62 150 52 122Z" fill="none" stroke="#00E5FF" stroke-width="4" filter="url(#vaultGlow)"/>
+    <path d="M156 86H292M156 122H494M156 154H454" stroke="#FFFFFF" stroke-opacity=".14" stroke-width="12" stroke-linecap="round"/>
+    <text x="156" y="86" class="label" fill="#BFA7FF">FACEBOOK GUARDN</text>
+    <text x="156" y="122" class="text">Profile protection exploration, privacy behavior, learning notes.</text>
+    <text x="156" y="154" class="tiny">mode: social privacy lab // output: explanation + repo</text>
+    <rect x="156" y="178" width="210" height="12" rx="6" fill="#111827"/>
+    <rect x="156" y="178" height="12" rx="6" fill="#00E5FF">
+      <animate attributeName="width" values="62;158;120;202;62" dur="5.7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <path class="dash" d="M116 388H1284" stroke="url(#edge)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="700" cy="388" r="9" fill="#FFFFFF" filter="url(#vaultGlow)">
+    <animate attributeName="cx" values="116;1284;116" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="24" y="24" width="1352" height="382" rx="24" fill="none" stroke="#FFFFFF" stroke-opacity=".10"/>
+</svg>

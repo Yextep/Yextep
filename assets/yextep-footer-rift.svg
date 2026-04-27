@@ -1,1 +1,45 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="240" viewBox="0 0 1400 240" role="img" aria-labelledby="title desc">
+  <title id="title">Yextep animated cyber footer</title>
+  <desc id="desc">Animated holographic cyber footer with signal waves and moving particles.</desc>
+  <defs>
+    <linearGradient id="footerBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#020409"/>
+      <stop offset="48%" stop-color="#06142F"/>
+      <stop offset="100%" stop-color="#10051F"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00FF88"/>
+      <stop offset="45%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="footerGlow" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <style>
+      .text { font: 900 22px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#FFFFFF; letter-spacing:4px; }
+      .small { font: 700 12px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#BDF9FF; }
+      .waveA { animation: waveA 8s ease-in-out infinite; }
+      .waveB { animation: waveB 10s ease-in-out infinite; }
+      .dash { stroke-dasharray: 9 14; animation: dash 9s linear infinite; }
+      .blink { animation: blink 1.2s steps(2,end) infinite; }
+      @keyframes waveA { 0%,100% { transform:translateX(0); } 50% { transform:translateX(-60px); } }
+      @keyframes waveB { 0%,100% { transform:translateX(-50px); } 50% { transform:translateX(50px); } }
+      @keyframes dash { to { stroke-dashoffset:-260; } }
+      @keyframes blink { 0%,50% { opacity:1; } 51%,100% { opacity:.15; } }
+      @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
+    </style>
+  </defs>
+  <rect width="1400" height="240" rx="30" fill="url(#footerBg)"/>
+  <path class="waveA" d="M-120 156 C80 72 214 206 402 132 S720 42 912 132 S1188 210 1520 90" fill="none" stroke="url(#wave)" stroke-width="6" stroke-opacity=".82" filter="url(#footerGlow)"/>
+  <path class="waveB" d="M-150 184 C80 112 254 218 456 166 S738 86 948 154 S1198 216 1540 132" fill="none" stroke="#00E5FF" stroke-width="2" stroke-opacity=".58"/>
+  <path class="dash" d="M86 82H1314" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="118" cy="82" r="7" fill="#00FF88" filter="url(#footerGlow)"/>
+  <circle cx="1282" cy="82" r="7" fill="#00E5FF" filter="url(#footerGlow)"/>
+  <text x="700" y="74" text-anchor="middle" class="text">END OF TRANSMISSION // SIGNAL STILL OPEN</text>
+  <text x="700" y="112" text-anchor="middle" class="small">github.com/Yextep // youtube.com/Yextep // authorized labs only <tspan class="blink">_</tspan></text>
+  <rect x="24" y="24" width="1352" height="192" rx="24" fill="none" stroke="#FFFFFF" stroke-opacity=".10"/>
+</svg>

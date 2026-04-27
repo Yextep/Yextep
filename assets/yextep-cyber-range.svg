@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Yextep animated cyber range header</title>
+  <desc id="desc">A futuristic pentesting command center with particles, radar rings, terminal panels, glitch typography and scanning energy.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020409"/>
+      <stop offset="32%" stop-color="#06142F"/>
+      <stop offset="64%" stop-color="#120928"/>
+      <stop offset="100%" stop-color="#02150E"/>
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#00E5FF" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00FF88" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="reactor" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".95"/>
+      <stop offset="12%" stop-color="#00E5FF" stop-opacity=".92"/>
+      <stop offset="38%" stop-color="#7C3AED" stop-opacity=".28"/>
+      <stop offset="72%" stop-color="#00FF88" stop-opacity=".10"/>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#00E5FF" stroke-opacity=".12" stroke-width="1"/>
+      <path d="M21 0V42M0 21H42" fill="none" stroke="#FFFFFF" stroke-opacity=".025" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0 0 0 0 0 .85 0 0 0 0 1 0 0 0 .9 0" result="cyan"/>
+      <feMerge>
+        <feMergeNode in="cyan"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="hotGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="screenClip">
+      <rect x="58" y="48" width="1284" height="620" rx="34"/>
+    </clipPath>
+    <style>
+      .mono { font-family: 'JetBrains Mono','Fira Code','Cascadia Code','Consolas',monospace; }
+      .hero { font: 900 132px 'JetBrains Mono','Fira Code','Consolas',monospace; letter-spacing: 10px; }
+      .kicker { font: 800 22px 'JetBrains Mono','Fira Code','Consolas',monospace; letter-spacing: 5px; fill:#00FF88; }
+      .sub { font: 700 24px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#BDF9FF; }
+      .micro { font: 700 13px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#8FF6FF; }
+      .tiny { font: 600 11px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#CFFFFA; opacity:.82; }
+      .scan { animation: scan 5.5s ease-in-out infinite; }
+      .gridMove { animation: gridMove 18s linear infinite; }
+      .dash { stroke-dasharray: 10 16; animation: dash 12s linear infinite; }
+      .dashFast { stroke-dasharray: 4 10; animation: dash 5s linear infinite; }
+      .blink { animation: blink 1.05s steps(2,end) infinite; }
+      .panelFloatA { animation: floatA 6s ease-in-out infinite; }
+      .panelFloatB { animation: floatB 7s ease-in-out infinite; }
+      .fadeLoop { animation: fadeLoop 4s ease-in-out infinite; }
+      @keyframes scan { 0%,100% { transform: translateY(-310px); opacity:0; } 18%,82% { opacity:.95; } 50% { transform: translateY(330px); } }
+      @keyframes gridMove { from { transform: translate(0,0); } to { transform: translate(42px,42px); } }
+      @keyframes dash { to { stroke-dashoffset: -260; } }
+      @keyframes blink { 0%,46% { opacity:1; } 47%,100% { opacity:.18; } }
+      @keyframes floatA { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+      @keyframes floatB { 0%,100% { transform: translateY(0); } 50% { transform: translateY(13px); } }
+      @keyframes fadeLoop { 0%,100% { opacity:.25; } 50% { opacity:1; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <rect width="1400" height="760" rx="38" fill="url(#bg)"/>
+  <g clip-path="url(#screenClip)">
+    <rect class="gridMove" x="-90" y="-90" width="1580" height="940" fill="url(#grid)"/>
+    <rect x="0" y="0" width="1400" height="760" fill="url(#reactor)" opacity=".55"/>
+    <path d="M0 638 C190 560 290 722 480 614 S785 432 990 568 S1210 692 1400 522 V760 H0Z" fill="#00FF88" opacity=".055"/>
+    <path d="M0 114 C170 180 285 26 452 98 S804 210 1018 118 S1260 56 1400 150" fill="none" stroke="#7C3AED" stroke-width="3" stroke-opacity=".42"/>
+    <path class="dash" d="M36 592 C224 448 344 634 516 492 S820 314 1038 474 S1248 592 1360 426" fill="none" stroke="#00E5FF" stroke-width="3" stroke-opacity=".62"/>
+
+    <g opacity=".46">
+      <text x="88" y="106" class="tiny">01001110 01001101 01000001 01010000</text>
+      <text x="104" y="135" class="tiny">scope.recon.enumerate.map.report</text>
+      <text x="1010" y="112" class="tiny">payload.forge.lab.only</text>
+      <text x="1004" y="142" class="tiny">signal.integrity: verified</text>
+      <text x="82" y="650" class="tiny">authorized targets only</text>
+      <text x="1084" y="650" class="tiny">proof before claims</text>
+    </g>
+
+    <g opacity=".74">
+      <circle cx="90" cy="220" r="2.8" fill="#00E5FF"><animate attributeName="cy" values="220;176;220" dur="4.2s" repeatCount="indefinite"/></circle>
+      <circle cx="154" cy="314" r="2.4" fill="#00FF88"><animate attributeName="cy" values="314;370;314" dur="5.6s" repeatCount="indefinite"/></circle>
+      <circle cx="224" cy="188" r="3.1" fill="#7C3AED"><animate attributeName="cy" values="188;238;188" dur="4.9s" repeatCount="indefinite"/></circle>
+      <circle cx="312" cy="560" r="2.5" fill="#00E5FF"><animate attributeName="cy" values="560;498;560" dur="6.1s" repeatCount="indefinite"/></circle>
+      <circle cx="402" cy="270" r="2.7" fill="#00FF88"><animate attributeName="cy" values="270;322;270" dur="5.2s" repeatCount="indefinite"/></circle>
+      <circle cx="512" cy="126" r="2.6" fill="#FFFFFF"><animate attributeName="cy" values="126;174;126" dur="4.7s" repeatCount="indefinite"/></circle>
+      <circle cx="602" cy="612" r="3" fill="#00E5FF"><animate attributeName="cy" values="612;556;612" dur="6.7s" repeatCount="indefinite"/></circle>
+      <circle cx="708" cy="104" r="2.4" fill="#00FF88"><animate attributeName="cy" values="104;162;104" dur="5.1s" repeatCount="indefinite"/></circle>
+      <circle cx="808" cy="620" r="2.6" fill="#7C3AED"><animate attributeName="cy" values="620;570;620" dur="4.8s" repeatCount="indefinite"/></circle>
+      <circle cx="924" cy="242" r="2.5" fill="#00E5FF"><animate attributeName="cy" values="242;296;242" dur="5.5s" repeatCount="indefinite"/></circle>
+      <circle cx="1034" cy="530" r="3.2" fill="#00FF88"><animate attributeName="cy" values="530;472;530" dur="6.2s" repeatCount="indefinite"/></circle>
+      <circle cx="1126" cy="198" r="2.5" fill="#FFFFFF"><animate attributeName="cy" values="198;250;198" dur="5.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1220" cy="586" r="2.8" fill="#00E5FF"><animate attributeName="cy" values="586;524;586" dur="4.6s" repeatCount="indefinite"/></circle>
+      <circle cx="1312" cy="302" r="2.7" fill="#00FF88"><animate attributeName="cy" values="302;356;302" dur="6.4s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <g transform="translate(700 354)">
+      <circle r="222" fill="none" stroke="#00E5FF" stroke-width="2" stroke-opacity=".22"/>
+      <circle r="176" fill="none" stroke="#7C3AED" stroke-width="2" stroke-opacity=".26"/>
+      <circle r="126" fill="none" stroke="#00FF88" stroke-width="2" stroke-opacity=".28"/>
+      <circle r="72" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity=".16"/>
+      <circle r="34" fill="#00E5FF" opacity=".15" filter="url(#hotGlow)">
+        <animate attributeName="r" values="28;44;28" dur="2.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values=".16;.38;.16" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="10" fill="#FFFFFF" filter="url(#glow)"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+        <path d="M-222 0H222" stroke="#00E5FF" stroke-width="2" stroke-opacity=".32"/>
+        <circle cx="222" cy="0" r="8" fill="#00FF88" filter="url(#glow)"/>
+        <circle cx="-222" cy="0" r="5" fill="#00E5FF" filter="url(#glow)"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="9s" repeatCount="indefinite"/>
+        <path d="M0 -176V176" stroke="#7C3AED" stroke-width="2" stroke-opacity=".30"/>
+        <circle cx="0" cy="-176" r="7" fill="#FFB000" filter="url(#hotGlow)"/>
+        <circle cx="0" cy="176" r="6" fill="#7C3AED" filter="url(#hotGlow)"/>
+      </g>
+      <path class="dashFast" d="M-160 -58 C-86 -152 28 -142 94 -72 S184 52 106 128 S-108 144 -162 40" fill="none" stroke="#00FF88" stroke-width="2" stroke-opacity=".72"/>
+    </g>
+
+    <g class="scan">
+      <rect x="70" y="370" width="1260" height="4" fill="url(#cyanLine)" opacity=".95"/>
+      <rect x="70" y="374" width="1260" height="54" fill="url(#cyanLine)" opacity=".12"/>
+    </g>
+
+    <g class="panelFloatA">
+      <rect x="74" y="176" width="260" height="150" rx="18" fill="#020617" fill-opacity=".78" stroke="#00E5FF" stroke-opacity=".45"/>
+      <text x="100" y="214" class="micro">RECON SOCKET</text>
+      <text x="100" y="244" class="tiny">&gt; dns / subdomains</text>
+      <text x="100" y="268" class="tiny">&gt; osint / footprint</text>
+      <text x="100" y="292" class="tiny">&gt; notes / evidence</text>
+      <circle cx="302" cy="212" r="7" fill="#00FF88" class="blink"/>
+    </g>
+
+    <g class="panelFloatB">
+      <rect x="1054" y="178" width="268" height="152" rx="18" fill="#020617" fill-opacity=".78" stroke="#00FF88" stroke-opacity=".42"/>
+      <text x="1080" y="216" class="micro">PAYLOAD FORGE</text>
+      <rect x="1080" y="242" width="186" height="10" rx="5" fill="#111827"/>
+      <rect x="1080" y="242" height="10" rx="5" fill="#00E5FF">
+        <animate attributeName="width" values="74;184;118;206;74" dur="5.2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="1080" y="280" class="tiny">&gt; HID lab</text>
+      <text x="1080" y="304" class="tiny">&gt; automation</text>
+    </g>
+
+    <g class="panelFloatB">
+      <rect x="86" y="472" width="304" height="126" rx="18" fill="#020617" fill-opacity=".72" stroke="#7C3AED" stroke-opacity=".48"/>
+      <text x="112" y="510" class="micro">DEFENSIVE LOOP</text>
+      <text x="112" y="540" class="tiny">report - harden - teach</text>
+      <path class="dashFast" d="M112 566H350" stroke="#00E5FF" stroke-width="2"/>
+    </g>
+
+    <g class="panelFloatA">
+      <rect x="986" y="474" width="318" height="126" rx="18" fill="#020617" fill-opacity=".72" stroke="#FFB000" stroke-opacity=".48"/>
+      <text x="1012" y="512" class="micro">PUBLIC SIGNAL</text>
+      <text x="1012" y="542" class="tiny">repos / videos / writeups</text>
+      <path d="M1012 568 C1060 538 1098 592 1148 562 S1230 536 1274 566" fill="none" stroke="#00FF88" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <text x="700" y="172" text-anchor="middle" class="kicker">AUTHORIZED LABS // OFFENSIVE LEARNING // DEFENSIVE OUTPUT</text>
+  <text x="700" y="370" text-anchor="middle" class="hero" fill="#FFFFFF" filter="url(#glow)">YEXTEP</text>
+  <text x="700" y="370" text-anchor="middle" class="hero" fill="#00E5FF" opacity=".46">
+    YEXTEP
+    <animate attributeName="x" values="700;692;708;700" dur=".42s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".08;.62;.12;.08" dur=".42s" repeatCount="indefinite"/>
+  </text>
+  <text x="700" y="370" text-anchor="middle" class="hero" fill="#FF3D81" opacity=".32">
+    YEXTEP
+    <animate attributeName="x" values="700;708;694;700" dur=".58s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values=".06;.44;.1;.06" dur=".58s" repeatCount="indefinite"/>
+  </text>
+  <text x="700" y="430" text-anchor="middle" class="sub">pentesting // osint // hardware hacking // payload engineering</text>
+  <text x="700" y="470" text-anchor="middle" class="micro">BUILD THE LAB . CAPTURE THE SIGNAL . SHIP THE METHOD <tspan class="blink">_</tspan></text>
+
+  <rect x="26" y="26" width="1348" height="708" rx="34" fill="none" stroke="#FFFFFF" stroke-opacity=".10"/>
+  <path d="M26 102H210M1190 102H1374M26 658H210M1190 658H1374" stroke="#00E5FF" stroke-width="3" stroke-opacity=".56"/>
+</svg>

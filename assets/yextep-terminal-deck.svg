@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+  <title id="title">Yextep animated terminal deck</title>
+  <desc id="desc">Animated cyber terminal showing a responsible pentesting workflow with scanlines and code rain.</desc>
+  <defs>
+    <linearGradient id="terminalBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#010409"/>
+      <stop offset="60%" stop-color="#06142F"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#00FF88" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="termGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="scanPattern" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 0H8" stroke="#FFFFFF" stroke-opacity=".035"/>
+    </pattern>
+    <style>
+      .mono { font-family:'JetBrains Mono','Fira Code','Consolas',monospace; }
+      .title { font: 800 19px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#FFFFFF; letter-spacing:2px; }
+      .cmd { font: 700 18px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#C8FFF8; }
+      .green { fill:#00FF88; }
+      .cyan { fill:#00E5FF; }
+      .violet { fill:#BFA7FF; }
+      .muted { fill:#7DDDF0; opacity:.72; }
+      .rain { font: 700 12px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#00FF88; opacity:.22; }
+      .blink { animation: blink .95s steps(2,end) infinite; }
+      .scan { animation: scan 4.2s ease-in-out infinite; }
+      .dash { stroke-dasharray: 6 12; animation: dash 8s linear infinite; }
+      @keyframes blink { 0%,50% { opacity:1; } 51%,100% { opacity:.12; } }
+      @keyframes scan { 0%,100% { transform:translateY(-240px); opacity:0; } 20%,80% { opacity:.8; } 50% { transform:translateY(250px); } }
+      @keyframes dash { to { stroke-dashoffset:-220; } }
+      @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
+    </style>
+  </defs>
+  <rect width="1400" height="560" rx="28" fill="url(#terminalBg)"/>
+  <rect width="1400" height="560" rx="28" fill="url(#scanPattern)"/>
+  <rect x="48" y="44" width="1304" height="472" rx="20" fill="#020617" fill-opacity=".72" stroke="#00E5FF" stroke-opacity=".34"/>
+  <rect x="48" y="44" width="1304" height="46" rx="20" fill="#07112A" stroke="#FFFFFF" stroke-opacity=".06"/>
+  <circle cx="82" cy="67" r="7" fill="#FF3D81"/>
+  <circle cx="108" cy="67" r="7" fill="#FFB000"/>
+  <circle cx="134" cy="67" r="7" fill="#00FF88"/>
+  <text x="172" y="73" class="title">yextep@cyber-range:~/authorized-labs</text>
+  <text x="1188" y="73" class="title cyan">LIVE</text>
+  <circle cx="1252" cy="67" r="6" fill="#00FF88" class="blink"/>
+
+  <g opacity=".30">
+    <text x="72" y="126" class="rain">0101 1010 0111 0100 1101 0010</text>
+    <text x="1008" y="130" class="rain">nmap scope notes proof report</text>
+    <text x="944" y="474" class="rain">payload lab only payload lab only</text>
+    <text x="86" y="482" class="rain">hardening notes hardening notes</text>
+  </g>
+
+  <g class="scan">
+    <rect x="70" y="260" width="1260" height="3" fill="url(#scanGrad)"/>
+    <rect x="70" y="264" width="1260" height="42" fill="url(#scanGrad)" opacity=".10"/>
+  </g>
+
+  <g transform="translate(82 134)">
+    <text y="0" class="cmd green">$ yextep --boot profile --mode cyber-range</text>
+    <text y="34" class="cmd muted">[ok] identity loaded: security student / builder / content creator</text>
+    <text y="68" class="cmd cyan">$ scope --target authorized_lab --rule evidence-first</text>
+    <text y="102" class="cmd muted">[ok] boundaries locked: owned machines, legal labs, responsible notes</text>
+    <text y="136" class="cmd violet">$ recon --collect osint --map attack_surface</text>
+    <text y="170" class="cmd muted">[stream] subdomains :: metadata :: context :: screenshots :: timeline</text>
+    <text y="204" class="cmd green">$ forge --payload educational --device attiny85</text>
+    <text y="238" class="cmd muted">[lab] timing, automation, HID concepts, safe demonstrations</text>
+    <text y="272" class="cmd cyan">$ report --export writeup --publish github+youtube</text>
+    <text y="306" class="cmd muted">[done] proof captured, hardening notes generated, method shipped</text>
+    <text y="350" class="cmd green">$ await next_signal <tspan class="blink">_</tspan></text>
+  </g>
+
+  <g transform="translate(1032 144)">
+    <rect width="250" height="272" rx="16" fill="#030B18" stroke="#7C3AED" stroke-opacity=".38"/>
+    <text x="24" y="38" class="title">MODULES</text>
+    <text x="24" y="78" class="cmd cyan" font-size="15">RECON</text>
+    <rect x="24" y="92" width="190" height="9" rx="4" fill="#111827"/>
+    <rect x="24" y="92" height="9" rx="4" fill="#00E5FF">
+      <animate attributeName="width" values="70;172;118;190;70" dur="5.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="24" y="132" class="cmd green" font-size="15">PAYLOAD</text>
+    <rect x="24" y="146" width="190" height="9" rx="4" fill="#111827"/>
+    <rect x="24" y="146" height="9" rx="4" fill="#00FF88">
+      <animate attributeName="width" values="58;150;120;178;58" dur="6.1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="24" y="186" class="cmd violet" font-size="15">HARDWARE</text>
+    <rect x="24" y="200" width="190" height="9" rx="4" fill="#111827"/>
+    <rect x="24" y="200" height="9" rx="4" fill="#7C3AED">
+      <animate attributeName="width" values="80;162;104;184;80" dur="5.8s" repeatCount="indefinite"/>
+    </rect>
+    <path class="dash" d="M24 240H222" stroke="#00FF88" stroke-width="2"/>
+  </g>
+
+  <rect x="24" y="24" width="1352" height="512" rx="24" fill="none" stroke="#FFFFFF" stroke-opacity=".10"/>
+</svg>

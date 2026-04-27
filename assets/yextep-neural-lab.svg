@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
+  <title id="title">Yextep neural pentesting lab map</title>
+  <desc id="desc">Animated attack-lab graph with moving packets, radar nodes and module panels.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020409"/>
+      <stop offset="55%" stop-color="#06152C"/>
+      <stop offset="100%" stop-color="#0A0620"/>
+    </linearGradient>
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="45%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#00FF88"/>
+    </linearGradient>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#00E5FF" opacity=".18"/>
+    </pattern>
+    <style>
+      .label { font: 800 18px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#FFFFFF; letter-spacing:2px; }
+      .small { font: 700 12px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#9AF7FF; }
+      .tiny { font: 600 10px 'JetBrains Mono','Fira Code','Consolas',monospace; fill:#D8FFFA; opacity:.76; }
+      .dash { stroke-dasharray: 10 14; animation: dash 9s linear infinite; }
+      .dash2 { stroke-dasharray: 5 9; animation: dash 5s linear infinite reverse; }
+      .pulse { animation: pulse 2.2s ease-in-out infinite; transform-origin:center; }
+      .blink { animation: blink 1.2s steps(2,end) infinite; }
+      @keyframes dash { to { stroke-dashoffset: -240; } }
+      @keyframes pulse { 0%,100% { opacity:.45; transform:scale(.96); } 50% { opacity:1; transform:scale(1.08); } }
+      @keyframes blink { 0%,50% { opacity:1; } 51%,100% { opacity:.15; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <rect width="1400" height="520" rx="30" fill="url(#bg2)"/>
+  <rect width="1400" height="520" rx="30" fill="url(#dots)"/>
+  <path d="M0 430 C190 330 292 500 468 372 S730 218 902 330 S1190 484 1400 318 V520 H0Z" fill="#00E5FF" opacity=".05"/>
+
+  <path id="routeA" class="dash" d="M138 260 C260 110 410 118 530 252 S770 410 906 254 S1110 112 1264 260" fill="none" stroke="url(#wire)" stroke-width="4" stroke-linecap="round"/>
+  <path id="routeB" class="dash2" d="M232 382 C360 270 464 342 570 176 S806 108 940 214 S1112 392 1220 344" fill="none" stroke="#00FF88" stroke-opacity=".62" stroke-width="2" stroke-linecap="round"/>
+  <path d="M138 260 C260 110 410 118 530 252 S770 410 906 254 S1110 112 1264 260" fill="none" stroke="#FFFFFF" stroke-opacity=".08" stroke-width="18" stroke-linecap="round"/>
+
+  <circle r="8" fill="#00FF88" filter="url(#glow2)">
+    <animateMotion dur="5.6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#routeA"/>
+    </animateMotion>
+  </circle>
+  <circle r="6" fill="#00E5FF" filter="url(#glow2)">
+    <animateMotion dur="5.6s" begin="1.8s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#routeA"/>
+    </animateMotion>
+  </circle>
+  <circle r="6" fill="#FFB000" filter="url(#glow2)">
+    <animateMotion dur="5.6s" begin="3.6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#routeA"/>
+    </animateMotion>
+  </circle>
+
+  <g transform="translate(138 260)">
+    <circle r="54" fill="#020617" stroke="#00E5FF" stroke-width="2"/>
+    <circle r="72" fill="none" stroke="#00E5FF" stroke-opacity=".18" class="pulse"/>
+    <text y="-8" text-anchor="middle" class="label">SCOPE</text>
+    <text y="18" text-anchor="middle" class="tiny">legal target</text>
+  </g>
+  <g transform="translate(360 142)">
+    <circle r="54" fill="#020617" stroke="#00FF88" stroke-width="2"/>
+    <circle r="72" fill="none" stroke="#00FF88" stroke-opacity=".18" class="pulse"/>
+    <text y="-8" text-anchor="middle" class="label">RECON</text>
+    <text y="18" text-anchor="middle" class="tiny">surface map</text>
+  </g>
+  <g transform="translate(530 252)">
+    <circle r="54" fill="#020617" stroke="#7C3AED" stroke-width="2"/>
+    <circle r="72" fill="none" stroke="#7C3AED" stroke-opacity=".20" class="pulse"/>
+    <text y="-8" text-anchor="middle" class="label">LAB</text>
+    <text y="18" text-anchor="middle" class="tiny">isolated test</text>
+  </g>
+  <g transform="translate(700 382)">
+    <circle r="54" fill="#020617" stroke="#FFB000" stroke-width="2"/>
+    <circle r="72" fill="none" stroke="#FFB000" stroke-opacity=".18" class="pulse"/>
+    <text y="-8" text-anchor="middle" class="label">PROOF</text>
+    <text y="18" text-anchor="middle" class="tiny">evidence</text>
+  </g>
+  <g transform="translate(906 254)">
+    <circle r="54" fill="#020617" stroke="#00E5FF" stroke-width="2"/>
+    <circle r="72" fill="none" stroke="#00E5FF" stroke-opacity=".18" class="pulse"/>
+    <text y="-8" text-anchor="middle" class="label">REPORT</text>
+    <text y="18" text-anchor="middle" class="tiny">impact notes</text>
+  </g>
+  <g transform="translate(1110 142)">
+    <circle r="54" fill="#020617" stroke="#00FF88" stroke-width="2"/>
+    <circle r="72" fill="none" stroke="#00FF88" stroke-opacity=".18" class="pulse"/>
+    <text y="-8" text-anchor="middle" class="label">HARDEN</text>
+    <text y="18" text-anchor="middle" class="tiny">defense loop</text>
+  </g>
+  <g transform="translate(1264 260)">
+    <circle r="54" fill="#020617" stroke="#FF3D81" stroke-width="2"/>
+    <circle r="72" fill="none" stroke="#FF3D81" stroke-opacity=".18" class="pulse"/>
+    <text y="-8" text-anchor="middle" class="label">SHIP</text>
+    <text y="18" text-anchor="middle" class="tiny">public guide</text>
+  </g>
+
+  <g transform="translate(88 56)">
+    <rect width="338" height="70" rx="14" fill="#020617" fill-opacity=".72" stroke="#00E5FF" stroke-opacity=".36"/>
+    <text x="24" y="30" class="small">YEXTEP.OPERATIONS_GRAPH</text>
+    <text x="24" y="52" class="tiny">authorized workflow, repeatable evidence</text>
+  </g>
+  <g transform="translate(994 392)">
+    <rect width="318" height="70" rx="14" fill="#020617" fill-opacity=".72" stroke="#00FF88" stroke-opacity=".36"/>
+    <text x="24" y="30" class="small">PUBLIC OUTPUT</text>
+    <text x="24" y="52" class="tiny">repositories, videos, writeups <tspan class="blink">_</tspan></text>
+  </g>
+
+  <text x="700" y="52" text-anchor="middle" class="label">PENTESTING LAB GRAPH // FROM SIGNAL TO METHOD</text>
+  <rect x="24" y="24" width="1352" height="472" rx="24" fill="none" stroke="#FFFFFF" stroke-opacity=".10"/>
+</svg>
