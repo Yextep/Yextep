@@ -253,7 +253,9 @@ Me interesan las partes que hacen que una herramienta sea útil: conservar el es
 
 El nudo de la cabecera se construye a partir de una curva paramétrica en tres dimensiones. Una malla tubular se proyecta a SVG, se ordena por profundidad y se ilumina por caras. Las fichas usan diagramas vectoriales dibujados para cada proyecto.
 
-$$C(t)=\big((2+\cos 3t)\cos 2t,\ (2+\cos 3t)\sin 2t,\ \sin 3t\big),\quad 0\leq t<2\pi$$
+$$
+C(t)=\big((2+\cos 3t)\cos 2t,\ (2+\cos 3t)\sin 2t,\ \sin 3t\big),\quad 0\leq t\lt 2\pi
+$$
 
 La superficie recorre 112 secciones de la curva y 10 vértices por sección: 1.120 caras antes de la proyección. La luz se calcula con las normales de cada cara.
 
