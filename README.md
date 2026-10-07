@@ -1,154 +1,275 @@
-<div align="center">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/hero-dark-mobile-static.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 640px)" srcset="./assets/atlas-v1/hero-light-mobile-static.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/atlas-v1/hero-dark-static.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/atlas-v1/hero-light-static.svg">
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/hero-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/atlas-v1/hero-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/atlas-v1/hero-dark.svg">
+  <img width="100%" src="./assets/atlas-v1/hero-light.svg" alt="Yextep. De una pregunta a un sistema. IA, datos y aplicaciones locales.">
+</picture>
 
-<img width="100%" src="./assets/yextep-cyber-range.svg" alt="Yextep animated cyber range profile header" />
+**Soy Yextep.** Desarrollo herramientas para trabajar con información, automatizar tareas y llevar aplicaciones del código al uso cotidiano. Mis proyectos recorren asistentes de IA, procesamiento de documentos, aplicaciones locales y exploración de datos.
 
-<a href="https://github.com/Yextep?tab=followers">
-  <img src="https://img.shields.io/github/followers/Yextep?style=for-the-badge&logo=github&label=FOLLOWERS&color=00E5FF&labelColor=050816" alt="GitHub followers" />
+<p align="center">
+  <a href="#proyectos">Los seis proyectos</a> &nbsp; · &nbsp; <a href="#forma-de-construir">Forma de construir</a> &nbsp; · &nbsp; <a href="https://github.com/Yextep?tab=repositories">Todos los repositorios</a> &nbsp; · &nbsp; <a href="https://www.youtube.com/Yextep">YouTube</a>
+</p>
+
+<a id="proyectos"></a>
+
+## Seis proyectos para conocer mi trabajo
+
+Ordenados de mayor a menor complejidad observada en su implementación. La selección considera arquitectura, persistencia, algoritmos, integraciones y tratamiento de errores.
+
+<a href="https://github.com/Yextep/prestamos">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/project-01-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/atlas-v1/project-01-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/atlas-v1/project-01-dark.svg">
+  <img width="100%" src="./assets/atlas-v1/project-01-light.svg" alt="01 · prestamos · sistemas con estado">
+</picture>
 </a>
-<a href="https://github.com/Yextep">
-  <img src="https://komarev.com/ghpvc/?username=Yextep&style=for-the-badge&label=SIGNAL+HITS&color=7C3AED" alt="Profile views" />
-</a>
-<a href="https://www.youtube.com/Yextep">
-  <img src="https://img.shields.io/badge/YOUTUBE-YEXTEP-FF0033?style=for-the-badge&logo=youtube&logoColor=white&labelColor=050816" alt="YouTube channel" />
-</a>
-<a href="https://github.com/Yextep?tab=repositories">
-  <img src="https://img.shields.io/badge/OPEN%20LABS-ONLINE-00FF88?style=for-the-badge&logo=github&logoColor=050816&labelColor=050816" alt="Open labs online" />
-</a>
 
-<br /><br />
+Cartera de préstamos en COP con bot de Telegram y panel web local. Comparte cálculos, historial y almacenamiento entre ambas interfaces.
 
-<a href="#ops"><img src="https://img.shields.io/badge/OPS-DECK-00E5FF?style=flat-square&labelColor=050816" alt="OPS deck" /></a>
-<a href="#modules"><img src="https://img.shields.io/badge/MODULES-ARMED-7C3AED?style=flat-square&labelColor=050816" alt="Modules" /></a>
-<a href="#vault"><img src="https://img.shields.io/badge/PROJECT-VAULT-00FF88?style=flat-square&labelColor=050816" alt="Project vault" /></a>
-<a href="#telemetry"><img src="https://img.shields.io/badge/TELEMETRY-LIVE-FFB000?style=flat-square&labelColor=050816" alt="Telemetry" /></a>
-<a href="#contact"><img src="https://img.shields.io/badge/CONTACT-LINK-FFFFFF?style=flat-square&labelColor=050816" alt="Contact" /></a>
+<details>
+<summary><strong>01 · Abrir la ficha técnica</strong></summary>
 
-</div>
+**Dónde está la complejidad.** Reglas de calendario e importes con Decimal, conversaciones persistentes, aislamiento por propietario y respaldos transaccionales.
 
----
-
-<a id="ops"></a>
-
-<div align="center">
-
-<img width="100%" src="./assets/yextep-neural-lab.svg" alt="Animated neural pentesting lab map" />
-
-</div>
-
-<table>
-  <tr>
-    <td width="25%" align="center"><strong>RECON</strong><br />OSINT, scope, signal</td>
-    <td width="25%" align="center"><strong>EXPLOIT LAB</strong><br />controlled targets</td>
-    <td width="25%" align="center"><strong>PAYLOADS</strong><br />education only</td>
-    <td width="25%" align="center"><strong>REPORT</strong><br />proof, fix, teach</td>
-  </tr>
-</table>
+El dominio calcula el saldo por fechas. SQLite conserva préstamos, pagos, anulaciones y conversaciones. El panel añade sesiones, protección CSRF y confirmación de importaciones.
 
 ```mermaid
 flowchart LR
-    A[Scope] --> B[Recon]
-    B --> C[Lab Target]
-    C --> D[Controlled Test]
-    D --> E[Evidence]
-    E --> F[Hardening Notes]
-    F --> G[Public Guide]
-    G --> B
+  T[Telegram] --> D[Dominio compartido]
+  W[Panel FastAPI] --> D
+  D --> S[SQLite y transacciones]
+  S --> R[Respaldos por propietario]
 ```
 
----
+**Qué se puede comprobar.** 98 casos de prueba verificados localmente; las pruebas usan datos ficticios y no envían mensajes a Telegram.
 
-<a id="modules"></a>
-
-<details open>
-<summary><strong>OPEN // CYBER TERMINAL</strong></summary>
-
-<img width="100%" src="./assets/yextep-terminal-deck.svg" alt="Animated terminal with pentesting workflow" />
+[Explorar el proyecto](https://github.com/Yextep/prestamos) · [Leer la implementación](https://github.com/Yextep/prestamos/blob/main/prestamos/storage.py)
 
 </details>
 
-<details>
-<summary><strong>OPEN // OPERATOR MATRIX</strong></summary>
+<a href="https://github.com/Yextep/TataBot">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/project-02-dark-mobile-static.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 640px)" srcset="./assets/atlas-v1/project-02-light-mobile-static.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/atlas-v1/project-02-dark-static.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/atlas-v1/project-02-light-static.svg">
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/project-02-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/atlas-v1/project-02-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/atlas-v1/project-02-dark.svg">
+  <img width="100%" src="./assets/atlas-v1/project-02-light.svg" alt="02 · TataBot · orquestación multimodal">
+</picture>
+</a>
 
-| Module | Signal |
+Asistente de Telegram que integra conversación, análisis de documentos e imágenes, generación y edición de imágenes, transcripción y voz.
+
+<details>
+<summary><strong>02 · Abrir la ficha técnica</strong></summary>
+
+**Dónde está la complejidad.** Concurrencia limitada, memoria por chat, selección de modelos, gestión de errores y alternativas para la entrega de medios.
+
+Los bloqueos asíncronos protegen escrituras de estado. La memoria y el contexto se guardan por chat; el cliente clasifica fallos de red, cuota y configuración. El envío adapta texto y medios a las restricciones de Telegram.
+
+```mermaid
+flowchart LR
+  I[Texto / imagen / audio] --> G[Semáforo y contexto]
+  G --> C[Cliente OpenAI]
+  C --> F[Modelos y manejo de errores]
+  F --> O[Respuesta en Telegram]
+```
+
+**Qué se puede comprobar.** La implementación separa memoria, cliente HTTP, gestión de claves y envío a Telegram en clases y funciones específicas.
+
+[Explorar el proyecto](https://github.com/Yextep/TataBot) · [Leer la implementación](https://github.com/Yextep/TataBot/blob/main/tata_bot.py)
+
+</details>
+
+<a href="https://github.com/Yextep/Resu">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/project-03-dark-mobile-static.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 640px)" srcset="./assets/atlas-v1/project-03-light-mobile-static.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/atlas-v1/project-03-dark-static.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/atlas-v1/project-03-light-static.svg">
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/project-03-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/atlas-v1/project-03-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/atlas-v1/project-03-dark.svg">
+  <img width="100%" src="./assets/atlas-v1/project-03-light.svg" alt="03 · Resu · algoritmos de texto">
+</picture>
+</a>
+
+Resumidor local de documentos con extracción multiformato, OCR opcional y selección de frases mediante técnicas clásicas de procesamiento de texto.
+
+<details>
+<summary><strong>03 · Abrir la ficha técnica</strong></summary>
+
+**Dónde está la complejidad.** Vectores dispersos, similitud de coseno, grafos de frases, PageRank y selección que equilibra relevancia y diversidad.
+
+Combina señales léxicas y de estructura con TextRank. MMR reduce redundancia al seleccionar frases. Incluye modos jerárquicos, por consulta, comparativos y mapas conceptuales.
+
+```mermaid
+flowchart LR
+  D[Documento] --> E[Extracción y frases]
+  E --> V[Vectores TF-IDF]
+  V --> G[Grafo y PageRank]
+  G --> M[Selección MMR]
+  M --> R[Resumen]
+```
+
+**Qué se puede comprobar.** Los algoritmos de puntuación y selección están implementados en el propio código; los resúmenes son extractivos.
+
+[Explorar el proyecto](https://github.com/Yextep/Resu) · [Leer la implementación](https://github.com/Yextep/Resu/blob/main/resumidor_pro.py)
+
+</details>
+
+<a href="https://github.com/Yextep/CSV-PDF">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/project-04-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/atlas-v1/project-04-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/atlas-v1/project-04-dark.svg">
+  <img width="100%" src="./assets/atlas-v1/project-04-light.svg" alt="04 · CSV-PDF · compatibilidad de formatos">
+</picture>
+</a>
+
+Conversor recursivo de hojas Excel/Calc a CSV y documentos Word/Writer a PDF, con motores alternativos y un reporte de cada ejecución.
+
+<details>
+<summary><strong>04 · Abrir la ficha técnica</strong></summary>
+
+**Dónde está la complejidad.** Detección del contenido real, lectores de distintos formatos, automatización de motores externos y registro del método utilizado.
+
+Contempla formatos binarios, OpenXML, HTML y XML. Las alternativas de PDF basadas en texto tienen límites de fidelidad que quedan documentados junto al resultado.
+
+```mermaid
+flowchart LR
+  F[Archivos] --> D[Detección de contenido]
+  D --> P[Lectores Python]
+  D --> E[LibreOffice / Word]
+  P --> O[CSV / PDF]
+  E --> O
+  O --> R[Reporte y advertencias]
+```
+
+**Qué se puede comprobar.** Cada hoja se exporta por separado; los reportes conservan rutas, métodos, advertencias y errores.
+
+[Explorar el proyecto](https://github.com/Yextep/CSV-PDF) · [Leer la implementación](https://github.com/Yextep/CSV-PDF/blob/main/csv-pdf.py)
+
+</details>
+
+<a href="https://github.com/Yextep/Booky">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/project-05-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/atlas-v1/project-05-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/atlas-v1/project-05-dark.svg">
+  <img width="100%" src="./assets/atlas-v1/project-05-light.svg" alt="05 · Booky · integración de fuentes">
+</picture>
+</a>
+
+Buscador de libros y documentos abiertos con adaptadores para siete proveedores, validación de enlaces y exportación de metadatos.
+
+<details>
+<summary><strong>05 · Abrir la ficha técnica</strong></summary>
+
+**Dónde está la complejidad.** Normalización de resultados heterogéneos, deduplicación, comprobaciones HTTP y distinción entre fichas y descargas disponibles.
+
+Valida estado, tamaño y tipo de contenido. Recomprueba un enlace antes de descargar, escribe primero en un archivo temporal y guarda los metadatos del documento.
+
+```mermaid
+flowchart LR
+  Q[Consulta] --> P[Adaptadores por fuente]
+  P --> N[Normalización y deduplicación]
+  N --> H[Validación HEAD / Range]
+  H --> D[Descarga o ficha]
+  H --> M[JSON / CSV]
+```
+
+**Qué se puede comprobar.** Incluye proveedores para Gutenberg, arXiv, DOAB, Europe PMC, Internet Archive, Open Library y OpenAlex.
+
+[Explorar el proyecto](https://github.com/Yextep/Booky) · [Leer la implementación](https://github.com/Yextep/Booky/blob/main/booky_open.py)
+
+</details>
+
+<a href="https://github.com/Yextep/prediccion-clima">
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/project-06-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/atlas-v1/project-06-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/atlas-v1/project-06-dark.svg">
+  <img width="100%" src="./assets/atlas-v1/project-06-light.svg" alt="06 · ¿Llueve? · datos y geografía">
+</picture>
+</a>
+
+Pronóstico de lluvia para Colombia con interfaz web local, búsqueda de lugares y estimaciones calculadas a partir de ensambles ECMWF y GFS.
+
+<details>
+<summary><strong>06 · Abrir la ficha técnica</strong></summary>
+
+**Dónde está la complejidad.** Semántica temporal de la precipitación, validación de miembros completos, límites geográficos y caché por lugar, fecha y hora.
+
+El porcentaje diario se calcula por miembros que alcanzan el umbral acumulado. Distingue el día completo del período restante, rechaza datos incompletos y muestra cuándo cambia de modelo.
+
+```mermaid
+flowchart LR
+  L[Lugar / geolocalización] --> G[Validación GeoJSON]
+  G --> E[ECMWF / GFS]
+  E --> V[24 horas y miembros completos]
+  V --> P[Probabilidad acumulada]
+  P --> W[Interfaz web]
+```
+
+**Qué se puede comprobar.** 12 pruebas verificadas localmente cubren cálculo, medianoche, islas, caché y proveedor alternativo.
+
+[Explorar el proyecto](https://github.com/Yextep/prediccion-clima) · [Leer la implementación](https://github.com/Yextep/prediccion-clima/blob/main/clima.py)
+
+</details>
+
+<a id="forma-de-construir"></a>
+
+## Forma de construir
+
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/process-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/atlas-v1/process-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/atlas-v1/process-dark.svg">
+  <img width="100%" src="./assets/atlas-v1/process-light.svg" alt="Entender el problema, modelar los datos, conectar las partes y comprobar los casos límite.">
+</picture>
+
+Me interesan las partes que hacen que una herramienta sea útil: conservar el estado, entender qué representa un dato, explicar los resultados y tener una respuesta cuando una dependencia falla.
+
+| Área | Una decisión que se puede seguir en el código |
 | --- | --- |
-| Recon Engine | Enumeracion, OSINT legal, mapas de superficie |
-| Payload Forge | Payloads educativos, automatizacion, HID lab |
-| Hardware Bridge | Attiny85, Arduino, pruebas con dispositivos propios |
-| Defensive Loop | Reporte, hardening, notas reproducibles |
-
-</details>
+| Estado y consistencia | Transacciones y conversaciones guardadas en `prestamos`. |
+| Integración y concurrencia | Contexto por chat, semáforos y gestión de errores en `TataBot`. |
+| Algoritmos y representación | Vectores dispersos, grafos y diversidad de frases en `Resu`. |
+| Compatibilidad y trazabilidad | Lectores alternativos, métodos y advertencias en `CSV-PDF`. |
+| Acceso y verificación | Adaptadores por fuente y comprobaciones HTTP en `Booky`. |
+| Tiempo y territorio | Intervalos de precipitación, miembros completos y GeoJSON en `prediccion-clima`. |
 
 <details>
-<summary><strong>OPEN // RESPONSIBLE MODE</strong></summary>
+<summary>También hay código detrás de esta identidad visual</summary>
 
-```txt
-scope: authorized targets only
-mode: lab first, public proof second
-output: tools + notes + videos
-rule: no noise, no claims without evidence
-```
+El nudo de la cabecera se construye a partir de una curva paramétrica en tres dimensiones. Una malla tubular se proyecta a SVG, se ordena por profundidad y se ilumina por caras. Las fichas usan diagramas vectoriales dibujados para cada proyecto.
+
+$$C(t)=\big((2+\cos 3t)\cos 2t,\ (2+\cos 3t)\sin 2t,\ \sin 3t\big),\quad 0\leq t<2\pi$$
+
+La superficie recorre 112 secciones de la curva y 10 vértices por sección: 1.120 caras antes de la proyección. La luz se calcula con las normales de cada cara.
+
+Las imágenes tienen variantes claras, oscuras y móviles. Las animaciones respetan la preferencia de movimiento reducido. Los recursos visuales se sirven desde este repositorio; los diagramas desplegables se renderizan con Mermaid en GitHub.
+
+Las comprobaciones de 98 y 12 pruebas corresponden a una ejecución local del 7 de octubre de 2026, con los archivos publicados de `prestamos` y `prediccion-clima`.
 
 </details>
 
----
+<p align="center">
+<a href="https://github.com/Yextep?tab=repositories">Explorar los repositorios</a> &nbsp; · &nbsp; <a href="https://www.youtube.com/Yextep">Ver mi canal</a>
+</p>
 
-<a id="vault"></a>
-
-<div align="center">
-
-<img width="100%" src="./assets/yextep-project-vault.svg" alt="Animated project vault for Yextep repositories" />
-
-<a href="https://github.com/Yextep/Attiny85-Ducky">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Yextep&repo=Attiny85-Ducky&theme=tokyonight&hide_border=true&bg_color=050816&title_color=00E5FF&text_color=FFFFFF&icon_color=00FF88" alt="Attiny85 Ducky repository" />
-</a>
-<a href="https://github.com/Yextep/guardn">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Yextep&repo=guardn&theme=tokyonight&hide_border=true&bg_color=050816&title_color=00E5FF&text_color=FFFFFF&icon_color=7C3AED" alt="Guardn repository" />
-</a>
-
-</div>
-
----
-
-<a id="telemetry"></a>
-
-<div align="center">
-
-<img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Yextep&theme=tokyonight" alt="GitHub profile details" />
-
-<br />
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=Yextep&show_icons=true&theme=tokyonight&hide_border=true&bg_color=050816&title_color=00E5FF&text_color=FFFFFF&icon_color=00FF88&rank_icon=github&include_all_commits=true" alt="GitHub stats" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yextep&layout=compact&theme=tokyonight&hide_border=true&bg_color=050816&title_color=00E5FF&text_color=FFFFFF" alt="Top languages" />
-
-<br />
-
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=Yextep&theme=react-dark&hide_border=true&bg_color=050816&color=00E5FF&line=00FF88&point=FFFFFF&area=true&area_color=7C3AED" alt="GitHub activity graph" />
-
-<br />
-
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Yextep&theme=tokyonight" alt="Repositories per language" />
-<img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Yextep&theme=tokyonight&utcOffset=0" alt="Productive time" />
-
-</div>
-
----
-
-<a id="contact"></a>
-
-<div align="center">
-
-<a href="https://github.com/Yextep">
-  <img src="https://img.shields.io/badge/GITHUB-YEXTEP-FFFFFF?style=for-the-badge&logo=github&logoColor=050816" alt="GitHub" />
-</a>
-<a href="https://www.youtube.com/Yextep">
-  <img src="https://img.shields.io/badge/YOUTUBE-YEXTEP-FF0033?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
-</a>
-<a href="https://github.com/Yextep?tab=repositories">
-  <img src="https://img.shields.io/badge/EXPLORE-REPOSITORIES-00E5FF?style=for-the-badge&logo=github&logoColor=050816" alt="Repositories" />
-</a>
-
-<br /><br />
-
-<img width="100%" src="./assets/yextep-footer-rift.svg" alt="Animated cyber footer" />
-
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark) and (max-width: 640px)" srcset="./assets/atlas-v1/footer-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/atlas-v1/footer-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/atlas-v1/footer-dark.svg">
+  <img width="100%" src="./assets/atlas-v1/footer-light.svg" alt="Yextep. El siguiente sistema empieza con una pregunta.">
+</picture>

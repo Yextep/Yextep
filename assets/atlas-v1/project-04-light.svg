@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="222" viewBox="0 0 1200 222" role="img" aria-labelledby="title desc">
+<title id="title">CSV-PDF — compatibilidad de formatos</title>
+<desc id="desc">Conversor recursivo de hojas Excel/Calc a CSV y documentos Word/Writer a PDF, con motores alternativos y un reporte de cada ejecución.</desc>
+<defs>
+ <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.7" fill="#d8d8d2"/></pattern>
+ <linearGradient id="beam"><stop stop-color="#305de7" stop-opacity="0"/><stop offset=".5" stop-color="#305de7"/><stop offset="1" stop-color="#305de7" stop-opacity="0"/></linearGradient>
+</defs>
+<style>
+ .drift {animation:float 12s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+ .flow {stroke-dasharray:3 16;animation:trace 18s linear infinite}
+ .pulse {animation:breathe 5s ease-in-out infinite}
+ @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+ @keyframes trace {to{stroke-dashoffset:-228}}
+ @keyframes breathe {0%,100%{opacity:.5}50%{opacity:1}}
+ @media (prefers-reduced-motion:reduce){.drift,.flow,.pulse{animation:none}}
+</style>
+<rect x="1" y="1" width="1198" height="220" rx="14" fill="#fffefa" stroke="#d8d8d2"/><rect x="1" y="25" width="4" height="172" rx="2" fill="#416fbb"/><text x="37" y="43" fill="#416fbb" font-family="Arial, sans-serif" font-size="19" font-weight="600">04</text><text x="86" y="43" fill="#666a70" font-family="Arial, sans-serif" font-size="13" font-weight="400" letter-spacing="1.8">COMPATIBILIDAD DE FORMATOS</text><text x="34" y="105" fill="#22262b" font-family="Arial, sans-serif" font-size="51" font-weight="600" letter-spacing="-1.5">CSV-PDF</text><text x="38" y="149" fill="#666a70" font-family="Arial, sans-serif" font-size="21" font-weight="400">Muchas entradas. Salidas que se pueden revisar.</text><g transform="translate(873 55) scale(1)"><rect x="16" y="18" width="55" height="69" rx="5" fill="#fffefa" stroke="#416fbb"/><rect x="34" y="32" width="55" height="69" rx="5" fill="#fffefa" stroke="#416fbb"/><rect x="52" y="46" width="55" height="69" rx="5" fill="#fffefa" stroke="#416fbb"/><line x1="102" y1="73" x2="143" y2="73" stroke="#416fbb" stroke-width="2" /><path d="M136 67 L143 73 L136 79" fill="none" stroke="#416fbb" stroke-width="2"/><rect x="158" y="28" width="68" height="38" rx="5" fill="#416fbb" opacity=".16"/><rect x="158" y="81" width="68" height="38" rx="5" fill="#416fbb" opacity=".16"/><text x="192" y="54" fill="#416fbb" font-family="Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">CSV</text><text x="192" y="107" fill="#416fbb" font-family="Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">PDF</text></g><text x="38" y="191" fill="#416fbb" font-family="Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2">PARSERS / LIBREOFFICE / REPORTES</text><path d="M1141 43 L1158 26 M1143 26 H1158 V41" fill="none" stroke="#666a70" stroke-width="1.5"/>
+</svg>

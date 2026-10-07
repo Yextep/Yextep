@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+<title id="title">Del problema a la implementación</title>
+<desc id="desc">Entender, modelar, conectar y comprobar: cuatro enfoques presentes en los proyectos destacados.</desc>
+<defs>
+ <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.7" fill="#343b47"/></pattern>
+ <linearGradient id="beam"><stop stop-color="#93b0ff" stop-opacity="0"/><stop offset=".5" stop-color="#93b0ff"/><stop offset="1" stop-color="#93b0ff" stop-opacity="0"/></linearGradient>
+</defs>
+<style>
+ .drift {animation:float 12s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+ .flow {stroke-dasharray:3 16;animation:trace 18s linear infinite}
+ .pulse {animation:breathe 5s ease-in-out infinite}
+ @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+ @keyframes trace {to{stroke-dashoffset:-228}}
+ @keyframes breathe {0%,100%{opacity:.5}50%{opacity:1}}
+ @media (prefers-reduced-motion:reduce){.drift,.flow,.pulse{animation:none}}
+</style>
+<rect width="800" height="560" rx="14" fill="#11151b"/><text x="38" y="48" fill="#a3abb9" font-family="Arial, sans-serif" font-size="21" font-weight="400" letter-spacing="1.5">DEL PROBLEMA A LA IMPLEMENTACIÓN</text><text x="38" y="111" fill="#93b0ff" font-family="Arial, sans-serif" font-size="25" font-weight="500">01</text><text x="38" y="158" fill="#eef0f4" font-family="Arial, sans-serif" font-size="31" font-weight="600">ENTENDER</text><text x="38" y="199" fill="#a3abb9" font-family="Arial, sans-serif" font-size="21" font-weight="400">Fechas, formatos, límites.</text><text x="420" y="111" fill="#93b0ff" font-family="Arial, sans-serif" font-size="25" font-weight="500">02</text><text x="420" y="158" fill="#eef0f4" font-family="Arial, sans-serif" font-size="31" font-weight="600">MODELAR</text><text x="420" y="199" fill="#a3abb9" font-family="Arial, sans-serif" font-size="21" font-weight="400">Estado, datos, interfaces.</text><text x="38" y="281" fill="#93b0ff" font-family="Arial, sans-serif" font-size="25" font-weight="500">03</text><text x="38" y="328" fill="#eef0f4" font-family="Arial, sans-serif" font-size="31" font-weight="600">CONECTAR</text><text x="38" y="369" fill="#a3abb9" font-family="Arial, sans-serif" font-size="21" font-weight="400">Usuarios, archivos, servicios.</text><text x="420" y="281" fill="#93b0ff" font-family="Arial, sans-serif" font-size="25" font-weight="500">04</text><text x="420" y="328" fill="#eef0f4" font-family="Arial, sans-serif" font-size="31" font-weight="600">COMPROBAR</text><text x="420" y="369" fill="#a3abb9" font-family="Arial, sans-serif" font-size="21" font-weight="400">Resultados y casos límite.</text><line x1="38" y1="424" x2="762" y2="424" stroke="#343b47" stroke-width="1" /><text x="38" y="478" fill="#eef0f4" font-family="Arial, sans-serif" font-size="27" font-weight="600">EL DETALLE ESTÁ EN EL CÓDIGO.</text><text x="38" y="522" fill="#a3abb9" font-family="Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="1">ABRE UNA FICHA Y SIGUE EL RECORRIDO.</text>
+</svg>

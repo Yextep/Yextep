@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="222" viewBox="0 0 1200 222" role="img" aria-labelledby="title desc">
+<title id="title">prestamos — sistemas con estado</title>
+<desc id="desc">Cartera de préstamos en COP con bot de Telegram y panel web local. Comparte cálculos, historial y almacenamiento entre ambas interfaces.</desc>
+<defs>
+ <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.7" fill="#d8d8d2"/></pattern>
+ <linearGradient id="beam"><stop stop-color="#305de7" stop-opacity="0"/><stop offset=".5" stop-color="#305de7"/><stop offset="1" stop-color="#305de7" stop-opacity="0"/></linearGradient>
+</defs>
+<style>
+ .drift {animation:float 12s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+ .flow {stroke-dasharray:3 16;animation:trace 18s linear infinite}
+ .pulse {animation:breathe 5s ease-in-out infinite}
+ @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+ @keyframes trace {to{stroke-dashoffset:-228}}
+ @keyframes breathe {0%,100%{opacity:.5}50%{opacity:1}}
+ @media (prefers-reduced-motion:reduce){.drift,.flow,.pulse{animation:none}}
+</style>
+<rect x="1" y="1" width="1198" height="220" rx="14" fill="#fffefa" stroke="#d8d8d2"/><rect x="1" y="25" width="4" height="172" rx="2" fill="#417b69"/><text x="37" y="43" fill="#417b69" font-family="Arial, sans-serif" font-size="19" font-weight="600">01</text><text x="86" y="43" fill="#666a70" font-family="Arial, sans-serif" font-size="13" font-weight="400" letter-spacing="1.8">SISTEMAS CON ESTADO</text><text x="34" y="105" fill="#22262b" font-family="Arial, sans-serif" font-size="51" font-weight="600" letter-spacing="-1.5">prestamos</text><text x="38" y="149" fill="#666a70" font-family="Arial, sans-serif" font-size="21" font-weight="400">Una cartera. Dos interfaces. Las mismas reglas.</text><g transform="translate(873 55) scale(1)"><line x1="18" y1="22" x2="176" y2="22" stroke="#d8d8d2" stroke-width="1" /><circle cx="24" cy="22" r="5" fill="#fffefa" stroke="#417b69" stroke-width="1.5"/><rect x="55" y="17" width="90" height="10" rx="3" fill="#417b69" opacity="0.25"/><line x1="18" y1="51" x2="176" y2="51" stroke="#d8d8d2" stroke-width="1" /><circle cx="24" cy="51" r="5" fill="#fffefa" stroke="#417b69" stroke-width="1.5"/><rect x="55" y="46" width="75" height="10" rx="3" fill="#417b69" opacity="0.43"/><line x1="18" y1="80" x2="176" y2="80" stroke="#d8d8d2" stroke-width="1" /><circle cx="24" cy="80" r="5" fill="#fffefa" stroke="#417b69" stroke-width="1.5"/><rect x="55" y="75" width="60" height="10" rx="3" fill="#417b69" opacity="0.61"/><line x1="18" y1="109" x2="176" y2="109" stroke="#d8d8d2" stroke-width="1" /><circle cx="24" cy="109" r="5" fill="#fffefa" stroke="#417b69" stroke-width="1.5"/><rect x="55" y="104" width="45" height="10" rx="3" fill="#417b69" opacity="0.79"/><path d="M202 38 L226 54 L202 70 L178 54 Z M202 56 L226 72 L202 88 L178 72 Z M202 74 L226 90 L202 106 L178 90 Z" fill="none" stroke="#417b69" stroke-width="2"/></g><text x="38" y="191" fill="#417b69" font-family="Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2">TELEGRAM / FASTAPI / SQLITE</text><path d="M1141 43 L1158 26 M1143 26 H1158 V41" fill="none" stroke="#666a70" stroke-width="1.5"/>
+</svg>

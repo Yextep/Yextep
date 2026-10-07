@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Del problema a la implementación</title>
+<desc id="desc">Entender, modelar, conectar y comprobar: cuatro enfoques presentes en los proyectos destacados.</desc>
+<defs>
+ <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.7" fill="#d8d8d2"/></pattern>
+ <linearGradient id="beam"><stop stop-color="#305de7" stop-opacity="0"/><stop offset=".5" stop-color="#305de7"/><stop offset="1" stop-color="#305de7" stop-opacity="0"/></linearGradient>
+</defs>
+<style>
+ .drift {animation:float 12s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+ .flow {stroke-dasharray:3 16;animation:trace 18s linear infinite}
+ .pulse {animation:breathe 5s ease-in-out infinite}
+ @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+ @keyframes trace {to{stroke-dashoffset:-228}}
+ @keyframes breathe {0%,100%{opacity:.5}50%{opacity:1}}
+ @media (prefers-reduced-motion:reduce){.drift,.flow,.pulse{animation:none}}
+</style>
+<rect width="1200" height="360" rx="14" fill="#f4f2ed"/><text x="38" y="44" fill="#666a70" font-family="Arial, sans-serif" font-size="14" font-weight="400" letter-spacing="2">DEL PROBLEMA A LA IMPLEMENTACIÓN</text><text x="38" y="117" fill="#305de7" font-family="Arial, sans-serif" font-size="19" font-weight="500">01</text><text x="38" y="165" fill="#22262b" font-family="Arial, sans-serif" font-size="23" font-weight="600">ENTENDER</text><text x="38" y="201" fill="#666a70" font-family="Arial, sans-serif" font-size="15" font-weight="400">Fechas, formatos, límites.</text><line x1="250" y1="110" x2="306" y2="110" stroke="#d8d8d2" stroke-width="1" /><text x="334" y="117" fill="#305de7" font-family="Arial, sans-serif" font-size="19" font-weight="500">02</text><text x="334" y="165" fill="#22262b" font-family="Arial, sans-serif" font-size="23" font-weight="600">MODELAR</text><text x="334" y="201" fill="#666a70" font-family="Arial, sans-serif" font-size="15" font-weight="400">Estado, datos, interfaces.</text><line x1="546" y1="110" x2="602" y2="110" stroke="#d8d8d2" stroke-width="1" /><text x="630" y="117" fill="#305de7" font-family="Arial, sans-serif" font-size="19" font-weight="500">03</text><text x="630" y="165" fill="#22262b" font-family="Arial, sans-serif" font-size="23" font-weight="600">CONECTAR</text><text x="630" y="201" fill="#666a70" font-family="Arial, sans-serif" font-size="15" font-weight="400">Usuarios, archivos, servicios.</text><line x1="842" y1="110" x2="898" y2="110" stroke="#d8d8d2" stroke-width="1" /><text x="926" y="117" fill="#305de7" font-family="Arial, sans-serif" font-size="19" font-weight="500">04</text><text x="926" y="165" fill="#22262b" font-family="Arial, sans-serif" font-size="23" font-weight="600">COMPROBAR</text><text x="926" y="201" fill="#666a70" font-family="Arial, sans-serif" font-size="15" font-weight="400">Resultados y casos límite.</text><line x1="38" y1="253" x2="1162" y2="253" stroke="#d8d8d2" stroke-width="1" /><text x="38" y="307" fill="#22262b" font-family="Arial, sans-serif" font-size="21" font-weight="600">EL DETALLE ESTÁ EN EL CÓDIGO.</text><text x="1162" y="307" fill="#666a70" font-family="Arial, sans-serif" font-size="12" font-weight="400" letter-spacing="1" text-anchor="end">ABRE UNA FICHA Y SIGUE EL RECORRIDO.</text>
+</svg>

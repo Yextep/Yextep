@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="116" viewBox="0 0 1200 116" role="img" aria-labelledby="title desc">
+<title id="title">Yextep</title>
+<desc id="desc">El siguiente sistema empieza con una pregunta.</desc>
+<defs>
+ <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.7" fill="#343b47"/></pattern>
+ <linearGradient id="beam"><stop stop-color="#93b0ff" stop-opacity="0"/><stop offset=".5" stop-color="#93b0ff"/><stop offset="1" stop-color="#93b0ff" stop-opacity="0"/></linearGradient>
+</defs>
+<style>
+ .drift {animation:float 12s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+ .flow {stroke-dasharray:3 16;animation:trace 18s linear infinite}
+ .pulse {animation:breathe 5s ease-in-out infinite}
+ @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+ @keyframes trace {to{stroke-dashoffset:-228}}
+ @keyframes breathe {0%,100%{opacity:.5}50%{opacity:1}}
+ @media (prefers-reduced-motion:reduce){.drift,.flow,.pulse{animation:none}}
+</style>
+<rect width="1200" height="116" rx="12" fill="#11151b"/><line x1="37" y1="30" x2="1163" y2="30" stroke="#343b47" stroke-width="1" /><text x="38" y="77" fill="#eef0f4" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="1">YEXTEP</text><text x="1163" y="77" fill="#a3abb9" font-family="Arial, sans-serif" font-size="14" font-weight="400" letter-spacing="1" text-anchor="end">EL SIGUIENTE SISTEMA EMPIEZA CON UNA PREGUNTA.</text>
+</svg>
