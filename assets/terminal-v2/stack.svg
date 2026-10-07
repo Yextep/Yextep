@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="310" viewBox="0 0 1200 310" role="img" aria-labelledby="title description">
+<title id="title">Python y Bash</title><desc id="description">Python para scripts y herramientas; Bash para terminal y automatización. Los fragmentos son ejemplos de lenguaje.</desc>
+<defs>
+<pattern id="grid" width="23" height="23" patternUnits="userSpaceOnUse"><path d="M23 0H0V23" stroke="#143427" stroke-width=".5" fill="none"/></pattern>
+<pattern id="scanlines" width="4" height="5" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000" opacity=".18"/></pattern>
+<linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#53fda5" stop-opacity="0"/><stop offset=".55" stop-color="#53fda5" stop-opacity=".16"/><stop offset="1" stop-color="#53fda5" stop-opacity="0"/></linearGradient>
+<linearGradient id="shine"><stop stop-color="#53fda5" stop-opacity="0"/><stop offset=".5" stop-color="#53fda5" stop-opacity=".9"/><stop offset="1" stop-color="#53fda5" stop-opacity="0"/></linearGradient>
+
+</defs>
+<style>
+.blink{animation:blink 1.4s steps(2,end) infinite}
+.scan{animation:scan 6s linear infinite}
+.flow{stroke-dasharray:5 13;animation:flow 10s linear infinite}
+.pulse{animation:pulse 4s ease-in-out infinite}
+.radar{transform-box:fill-box;transform-origin:center;animation:spin 12s linear infinite}
+.typing{animation:typing 14s steps(14,end) infinite}
+@keyframes blink{50%{opacity:0}}
+@keyframes scan{0%{transform:translateY(-60px)}100%{transform:translateY(420px)}}
+@keyframes flow{to{stroke-dashoffset:-180}}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes typing{0%{width:0}20%,95%{width:480px}100%{width:0}}
+
+</style>
+<rect x="1" y="1" width="581" height="308" fill="#06100d" rx="13" stroke="#236048" /><text x="31" y="49" fill="#53fda5" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="19" font-weight="600" >01 / PYTHON</text><text x="31" y="92" fill="#e4fff0" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="25" font-weight="600" >Scripts y herramientas</text><line x1="31" y1="113" x2="552" y2="113" stroke="#236048" stroke-width="1" /><text x="31" y="163" fill="#a3ffd3" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="20" font-weight="400" >from pathlib import Path</text><text x="31" y="203" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="18" font-weight="400" >archivos = Path(&quot;.&quot;).glob(&quot;*.py&quot;)</text><text x="31" y="266" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="14" font-weight="400" >IDEAS → CÓDIGO → HERRAMIENTAS</text><line x1="31" y1="286" x2="552" y2="286" stroke="#53fda5" stroke-width="2" class="flow"/><rect x="619" y="1" width="581" height="308" fill="#06100d" rx="13" stroke="#236048" /><text x="649" y="49" fill="#53fda5" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="19" font-weight="600" >02 / BASH</text><text x="649" y="92" fill="#e4fff0" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="25" font-weight="600" >Terminal y automatización</text><line x1="649" y1="113" x2="1170" y2="113" stroke="#236048" stroke-width="1" /><text x="649" y="163" fill="#a3ffd3" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="20" font-weight="400" >#!/usr/bin/env bash</text><text x="649" y="203" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="18" font-weight="400" >printf &quot;Menos tareas repetitivas.\n&quot;</text><text x="649" y="266" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="14" font-weight="400" >COMANDOS → SCRIPTS → AUTOMATIZACIÓN</text><line x1="649" y1="286" x2="1170" y2="286" stroke="#53fda5" stroke-width="2" class="flow"/>
+</svg>

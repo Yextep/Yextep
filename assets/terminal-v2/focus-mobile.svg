@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="790" viewBox="0 0 760 790" role="img" aria-labelledby="title description">
+<title id="title">Pentesting, automatización y Seguridad Informática</title><desc id="description">Mis intereses: entender fallos y aprender pentesting, crear herramientas automatizadas y continuar mi formación en Seguridad Informática.</desc>
+<defs>
+<pattern id="grid" width="23" height="23" patternUnits="userSpaceOnUse"><path d="M23 0H0V23" stroke="#143427" stroke-width=".5" fill="none"/></pattern>
+<pattern id="scanlines" width="4" height="5" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000" opacity=".18"/></pattern>
+<linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#53fda5" stop-opacity="0"/><stop offset=".55" stop-color="#53fda5" stop-opacity=".16"/><stop offset="1" stop-color="#53fda5" stop-opacity="0"/></linearGradient>
+<linearGradient id="shine"><stop stop-color="#53fda5" stop-opacity="0"/><stop offset=".5" stop-color="#53fda5" stop-opacity=".9"/><stop offset="1" stop-color="#53fda5" stop-opacity="0"/></linearGradient>
+
+</defs>
+<style>
+.blink{animation:blink 1.4s steps(2,end) infinite}
+.scan{animation:scan 6s linear infinite}
+.flow{stroke-dasharray:5 13;animation:flow 10s linear infinite}
+.pulse{animation:pulse 4s ease-in-out infinite}
+.radar{transform-box:fill-box;transform-origin:center;animation:spin 12s linear infinite}
+.typing{animation:typing 14s steps(14,end) infinite}
+@keyframes blink{50%{opacity:0}}
+@keyframes scan{0%{transform:translateY(-60px)}100%{transform:translateY(420px)}}
+@keyframes flow{to{stroke-dashoffset:-180}}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes typing{0%{width:0}20%,95%{width:480px}100%{width:0}}
+
+</style>
+<rect x="1" y="1" width="758" height="788" fill="#06100d" rx="14" stroke="#236048" /><circle cx="100" cy="122" r="46" fill="#091a14" stroke="#236048"/><circle cx="100" cy="122" r="17" fill="none" stroke="#236048"/><circle cx="100" cy="122" r="31" fill="none" stroke="#236048"/><circle cx="100" cy="122" r="46" fill="none" stroke="#236048"/><line x1="54" y1="122" x2="146" y2="122" stroke="#236048" stroke-width="1" /><line x1="100" y1="76" x2="100" y2="168" stroke="#236048" stroke-width="1" /><g class="radar"><circle cx="100" cy="122" r="46" fill="none" opacity="0"/><line x1="100" y1="122" x2="131" y2="91" stroke="#53fda5" stroke-width="2" /></g><circle class="pulse" cx="121" cy="107" r="4" fill="#53fda5"/><text x="206" y="67" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="20" font-weight="400" >01</text><text x="206" y="119" fill="#a3ffd3" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="24" font-weight="600" >PENTESTING</text><text x="206" y="168" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="23" font-weight="400" >Entender fallos.</text><text x="206" y="203" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="23" font-weight="400" >Practicar y aprender.</text><line x1="32" y1="255" x2="728" y2="255" stroke="#236048" stroke-width="1" /><text x="63" y="396" fill="#53fda5" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="54" font-weight="700" >&gt;_</text><text x="206" y="320" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="20" font-weight="400" >02</text><text x="206" y="372" fill="#a3ffd3" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="24" font-weight="600" >AUTOMATIZACIÓN</text><text x="206" y="421" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="23" font-weight="400" >Menos tareas repetitivas.</text><text x="206" y="456" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="23" font-weight="400" >Más herramientas útiles.</text><line x1="32" y1="508" x2="728" y2="508" stroke="#236048" stroke-width="1" /><text x="63" y="649" fill="#53fda5" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="54" font-weight="700" >{}</text><text x="206" y="573" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="20" font-weight="400" >03</text><text x="206" y="625" fill="#a3ffd3" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="24" font-weight="600" >SEGURIDAD INFORMÁTICA</text><text x="206" y="674" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="23" font-weight="400" >Formación y curiosidad.</text><text x="206" y="709" fill="#79a58e" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="23" font-weight="400" >Seguir profundizando.</text>
+</svg>
