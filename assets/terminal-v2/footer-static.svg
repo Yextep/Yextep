@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="104" viewBox="0 0 1200 104" role="img" aria-labelledby="title description">
+<title id="title">Yextep · Colombia</title><desc id="description">Sigo aprendiendo. Sigo construyendo.</desc>
+<defs>
+<pattern id="grid" width="23" height="23" patternUnits="userSpaceOnUse"><path d="M23 0H0V23" stroke="#143427" stroke-width=".5" fill="none"/></pattern>
+<pattern id="scanlines" width="4" height="5" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000" opacity=".18"/></pattern>
+<linearGradient id="scan" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#53fda5" stop-opacity="0"/><stop offset=".55" stop-color="#53fda5" stop-opacity=".16"/><stop offset="1" stop-color="#53fda5" stop-opacity="0"/></linearGradient>
+<linearGradient id="shine"><stop stop-color="#53fda5" stop-opacity="0"/><stop offset=".5" stop-color="#53fda5" stop-opacity=".9"/><stop offset="1" stop-color="#53fda5" stop-opacity="0"/></linearGradient>
+
+</defs>
+<style>
+.blink{animation:blink 1.4s steps(2,end) infinite}
+.scan{animation:scan 6s linear infinite}
+.flow{stroke-dasharray:5 13;animation:flow 10s linear infinite}
+.pulse{animation:pulse 4s ease-in-out infinite}
+.radar{transform-box:fill-box;transform-origin:center;animation:spin 12s linear infinite}
+.typing{animation:typing 14s steps(14,end) infinite}
+@keyframes blink{50%{opacity:0}}
+@keyframes scan{0%{transform:translateY(-60px)}100%{transform:translateY(420px)}}
+@keyframes flow{to{stroke-dashoffset:-180}}
+@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes typing{0%{width:0}20%,95%{width:480px}100%{width:0}}
+.blink,.scan,.flow,.pulse,.radar,.typing{animation:none}
+</style>
+<rect x="1" y="1" width="1198" height="102" fill="#06100d" rx="12" stroke="#236048" /><text x="30" y="61" fill="#53fda5" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="21" font-weight="400" >yextep@colombia:~$</text><text x="310" y="61" fill="#e4fff0" font-family="Consolas, DejaVu Sans Mono, monospace" font-size="21" font-weight="400" >Sigo aprendiendo. Sigo construyendo.</text><rect x="1166" y="45" width="5" height="25" fill="#a3ffd3" rx="0" class="blink"/>
+</svg>
