@@ -5,7 +5,7 @@
   <img width="100%" src="./assets/terminal-v2/profile.svg" alt="Daniel Lezcano · Yextep. Colombia. Estudiante de Seguridad Informática. Python y Bash. Pentesting y herramientas automatizadas.">
 </picture>
 
-**Soy Daniel Lezcano, de Colombia.** Estudio Seguridad Informática, programo en **Python y Bash**, y me interesan el **pentesting** y el desarrollo de **herramientas automatizadas**.
+**Soy Daniel Lezcano.** Estudio Seguridad Informática, programo en **Python y Bash**, me interesa el **pentesting** y el desarrollo de **herramientas automatizadas**.
 
 <p align="center">
   <a href="https://github.com/Yextep?tab=repositories"><img src="./assets/terminal-v2/repositories.svg" width="180" alt="Explorar mis repositorios"></a>
@@ -36,8 +36,6 @@
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/terminal-v2/activity-static.svg">
   <img width="100%" src="https://www.gitskins.com/api/section/heatmap?username=Yextep&amp;theme=matrix&amp;style=aura" alt="Actividad pública de Yextep en GitHub.">
 </picture>
-
-<p align="center"><sub>Datos públicos de GitHub · vista animada de <a href="https://www.gitskins.com">GitSkins</a>.</sub></p>
 
 <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 640px)" srcset="./assets/terminal-v2/footer-mobile-static.svg">
